@@ -1,0 +1,203 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+
+ 
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.body{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+}
+
+.inpt{ 
+  display:flex ;
+  flex-direction:row-reverse ;
+  gap: 12px;
+    position: absolute;
+    bottom: 4%;
+  
+}
+img{
+  width: 20px;
+  height: 20px;
+
+}
+
+button{ 
+  
+  background-color: rgb(255, 255, 255);
+  border: 2px solid;
+  border-radius: 70px;
+  transition: 2s;
+}
+
+input { 
+  border: none;
+  border-radius: 10px;
+  width: 520px;
+  color:#fffdfd;
+  font-style: italic;
+  padding-left: 20px;
+  background-color: rgb(118, 118, 118);
+  font-weight: 500;
+  transition: 2s;
+}
+
+
+
+input:Hover{
+  box-shadow: 12px 12px 100px  rgb(255, 255, 255);
+  
+          
+}
+
+
+button:Hover{
+  box-shadow: 9px 9px 100px  rgb(255, 255, 255);
+}
+
+
+h1 { 
+  color: rgb(126, 126, 126);
+  letter-spacing: 5px;
+   font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  position: relative;
+  top: -194px;
+  
+}
+::placeholder{
+  color: rgb(43, 43, 43);
+  padding-left: 20px;
+  font-size: larger;
+  font-weight: 200;
+}
+
+p {
+  word-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  white-space: pre-wrap; /* Change this line */
+}
+
+.content {
+  max-width: 100%;
+  max-height: 50vh;
+  overflow-y: auto;
+  white-space: normal;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  bottom:-70px;
+}
+
+
+.quote{ 
+  position: fixed;
+  top: 26%;
+  font-size: smaller;
+  padding-bottom: 2px;
+  right: 47%;
+}
+
+
+
+.credit{ 
+  position: absolute;
+  bottom: -2%;
+  font-size: 9px;
+  right: 46%;
+  
+}
+
+.container{ 
+  position: fixed;
+  
+
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+@media (max-width: 600px) {
+    input { 
+ width: 65%;
+ 
+ 
+}
+::placeholder{
+  color: rgb(43, 43, 43);
+  padding-left: 20px;
+  font-size: small;
+  font-weight: 200;
+}
+
+.inpt{
+  position: fixed;
+}
+
+
+
+.credit{
+  right: 33%;
+}
+
+
+.quote{
+  
+position: fixed;
+right:35%;
+}
+
+}
+
+
+
+
+
+
+/* --------------------- */
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}

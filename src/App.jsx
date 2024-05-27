@@ -66,7 +66,7 @@ async function generateAnswer(){
     <>
       <div className="body">
         <div className="container">
-          <h1>Bhai ai</h1>
+          <h1>Bhai.Ai</h1>
           <h5 className="quote">Your pocket genius</h5>
         </div>
 

@@ -94,7 +94,7 @@ h1 {
 
 p {
   word-wrap: break-word;
-  color: black;
+  color: White;
   font-family: 'Courier New', Courier, monospace;
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
   white-space: pre-wrap; /* Change this line */
